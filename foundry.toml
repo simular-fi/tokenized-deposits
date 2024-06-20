@@ -1,6 +1,4 @@
 [profile.default]
 src = "src"
 out = "out"
-libs = ["dependencies"]
-
-[dependencies]
+libs = ["lib"]
