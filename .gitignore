@@ -12,3 +12,16 @@ docs/
 
 # Dotenv file
 .env
+
+# mystuff
+.vscode/
+todo.md
+.DS_Store
+
+
+# Python stuff
+.venv/
+__pycache__
+.ipynb_checkpoints
+
+

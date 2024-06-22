@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "abmodel"
+version = "0.1.0"
+description = ''
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+keywords = []
+authors = [
+  { name = "Dave Bryson", email = "davebryson@users.noreply.github.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+dependencies = [
+  "matplotlib>=3.8.2",
+  "simular-evm>=0.2.5",
+  "mesa>=2.3.0",
+  "jupyter>=1.0.0",
+  "scipy>=1.13.0",
+  "seaborn",
+  "tqdm",
+]
+
+[project.urls]
+Documentation = "https://github.com/unknown/abmodel#readme"
+Issues = "https://github.com/unknown/abmodel/issues"
+Source = "https://github.com/unknown/abmodel"
+
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
